@@ -1,0 +1,257 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.stick {
+    padding: 10px 40px;
+    width: 90%;
+    margin: auto;
+}
+.stick .content {
+    display: grid;
+    grid-template-columns: 75% 23%;
+    grid-gap: 2%;
+}
+.content .front {
+    background-image: url('../image/SWD.png');
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    width: 100%;
+}
+.content .front  h2  {
+    color: white;
+    position: absolute;
+    max-width: 40%;
+    text-align: center;
+    line-height: 1.6;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content .show {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f2f2f2;
+    color: #777;
+}
+.content .show .left i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+.content .show .right select:first-of-type {
+    margin-right: 20px;
+}
+.content .show .right   select {
+    border: none;
+    color: #777;
+} 
+.content .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.content .product .control {
+    width: 100%;
+    position: relative;
+}
+.content .product .control::after {
+    content: '-12%';
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    right: 0;
+    top: -18px;
+}
+.content .product .control img {
+    max-width: 100%;
+}
+.content .product .info {
+    padding: 40px 0 20px;
+}
+.content .product .info  .starts i  {
+    color: #f3cd1e;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+.content .product .info h4 {
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.content .product .info span:nth-of-type(2) {
+    color: #777;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+.content .product .info .price span {
+    display: inline;
+}
+.content .product .info .price span:first-child {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.content .product .info .price span:last-child {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+.content .product .info p {
+    color: #444;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.content .product .icons i {
+    border: 2px solid #eee;
+    padding: 7px;
+    margin: 0;
+    color: #777;
+}
+.content aside .top {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+.content aside .top hr {
+    border-color: red;
+    display: inline-block;
+    width: 40px;
+}
+.content aside .top h5 {
+    margin: 0 0 5px;
+}
+.content aside .top label {
+    display: block;
+    color: #777;
+    position: relative;
+    font-size: 14px;
+}
+.content aside .top label:first-of-type {
+    margin-top: 20px;
+}
+.content aside .top ul { 
+    margin: 0;
+    padding: 15px 0 0 10px;
+    color: #777;
+    font-size: 13px;
+}
+.content aside .top label::after {
+    content: '\f077';
+    position: absolute;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}
+.content aside .top ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.content aside .top label:not(:first-of-type) {
+    padding-top: 10px;
+}
+.content aside .top label:not(:first-of-type)::after{
+    content: '\f078';
+    position: absolute;
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    right: 0;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.content aside .bottom {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+.content aside .bottom hr {
+    background-color: red;
+    display: inline-block;
+    width: 40px;
+    margin-bottom: 25px;
+}
+.content aside .bottom h5 {
+    margin: 0 0 5px;
+}
+.content aside .bottom div {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+}
+.content aside .bottom div::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 1px 1px 5px -1px #aaa;
+}
+.content aside .bottom div:first-of-type::before {
+    background-color: #aab2bd;
+}
+.content aside .bottom div:nth-of-type(2)::before {
+    background-color: white;
+}
+.content aside .bottom div:nth-of-type(3)::before {
+    background-color: black;
+}
+.content aside .bottom div:nth-of-type(4)::before {
+    background-color: #c19a6b;
+}
+.content aside .bottom div:last-of-type::before {
+    background-color: #f39c11;
+}
+@media (max-width: 1199px) {
+    .stick .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content aside {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .content aside .top {
+        width: 50%;
+    }
+    .content aside .bottom {
+        width: 45%;
+    }
+}
+@media (max-width: 767px) {
+    .content .show  {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .content .show .right  {
+        margin-top: 20px;
+    }
+}
